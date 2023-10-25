@@ -15,8 +15,4 @@ public abstract record DomainEvent
         Id = Guid.NewGuid();
         Consumed = false;
     }
-    public void MarkAsConsumed()
-    {
-        Consumed = true;
-    }
 }
